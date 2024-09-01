@@ -3,6 +3,7 @@
 git clone https://github.com/ehh67855/devs-on-wallstreet.git
 cd devs-on-wallstreet
 npm install react-icons react-router-dom bootstrap react-bootstrap 
+npm install react-big-calendar moment
 npm install gh-pages --save-dev
 npm start
 ```

@@ -12,7 +12,7 @@ function HomePage() {
           <p>
             Some kind of phrase phrase goes here.
           </p>
-          <Button variant="light" size="lg">Learn More</Button>
+          <Button variant="light" size="lg" href="/about">Learn More</Button>
         </Container>
       </div>
 
@@ -73,10 +73,9 @@ function HomePage() {
         </Row>
       </Container>
 
-      {/* Call to Action */}
       <Container fluid className="bg-secondary text-white text-center p-5">
-        <h2>Ready to get started?</h2>
-        <Button variant="light" size="lg">Contact Us</Button>
+        <h2>Join our group me</h2>
+        <Button variant="light" size="lg">Join Here</Button>
       </Container>
     </div>
   );
