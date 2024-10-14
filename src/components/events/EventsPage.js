@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form } from 'react-bootstrap';
-import ArticlePreview from './ArticlePreview';
+import EventPreview from './EventPreview';
 
 function NewsPage() {
   const articles = [
@@ -25,7 +25,6 @@ function NewsPage() {
       date: 'August 20, 2024',
       link: '/articles/quantum-computing'
     },
-    // Add more placeholder articles as needed
   ];
 
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -56,7 +55,7 @@ function NewsPage() {
         <Col md={9}>
           <h1 className="mb-4">Latest Articles</h1>
           {filteredArticles.map((article, index) => (
-            <ArticlePreview 
+            <EventPreview 
               key={index}
               title={article.title}
               description={article.description}

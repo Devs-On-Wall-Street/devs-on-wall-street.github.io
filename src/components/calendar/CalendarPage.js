@@ -1,43 +1,23 @@
 import React, { useState } from 'react';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { Container, Row, Col, Modal, Button } from 'react-bootstrap';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
+import eventsData from './eventsData'; // Import the events array
 
 const localizer = momentLocalizer(moment);
 
 function CalendarPage() {
-  const [events, setEvents] = useState([
-    {
-      title: 'React Workshop',
-      start: new Date(2024, 8, 15, 10, 0), // Date format is Year, Month (0-indexed), Day, Hour, Minute
-      end: new Date(2024, 8, 15, 12, 0),
-    },
-    {
-      title: 'Hackathon',
-      start: new Date(2024, 8, 20, 9, 0),
-      end: new Date(2024, 8, 20, 18, 0),
-    },
-    // Add more events as needed
-  ]);
+  const [events, setEvents] = useState(eventsData); // Use the imported data
+  const [showModal, setShowModal] = useState(false);
+  const [selectedEvent, setSelectedEvent] = useState(null);
 
-  const [newEvent, setNewEvent] = useState({
-    title: '',
-    start: '',
-    end: '',
-  });
-
-  const handleAddEvent = (e) => {
-    e.preventDefault();
-    if (newEvent.title && newEvent.start && newEvent.end) {
-      setEvents([...events, {
-        title: newEvent.title,
-        start: new Date(newEvent.start),
-        end: new Date(newEvent.end),
-      }]);
-      setNewEvent({ title: '', start: '', end: '' });
-    }
+  const handleSelectEvent = (event) => {
+    setSelectedEvent(event);
+    setShowModal(true);
   };
+
+  const handleCloseModal = () => setShowModal(false);
 
   return (
     <Container className="my-5">
@@ -51,48 +31,27 @@ function CalendarPage() {
             endAccessor="end"
             style={{ height: 500 }}
             selectable
+            onSelectEvent={handleSelectEvent}
           />
         </Col>
       </Row>
 
-      <Row className="mt-5">
-        <Col md={6} className="mx-auto">
-          <h4>Add New Event</h4>
-          <Form onSubmit={handleAddEvent}>
-            <Form.Group controlId="formEventTitle">
-              <Form.Label>Event Title</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter event title"
-                value={newEvent.title}
-                onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })}
-              />
-            </Form.Group>
-
-            <Form.Group controlId="formEventStart">
-              <Form.Label>Start Date & Time</Form.Label>
-              <Form.Control
-                type="datetime-local"
-                value={newEvent.start}
-                onChange={(e) => setNewEvent({ ...newEvent, start: e.target.value })}
-              />
-            </Form.Group>
-
-            <Form.Group controlId="formEventEnd">
-              <Form.Label>End Date & Time</Form.Label>
-              <Form.Control
-                type="datetime-local"
-                value={newEvent.end}
-                onChange={(e) => setNewEvent({ ...newEvent, end: e.target.value })}
-              />
-            </Form.Group>
-
-            <Button variant="primary" type="submit">
-              Add Event
+      {selectedEvent && (
+        <Modal show={showModal} onHide={handleCloseModal}>
+          <Modal.Header closeButton>
+            <Modal.Title>{selectedEvent.title}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <p><strong>Date & Time:</strong> {moment(selectedEvent.start).format('MMMM Do YYYY, h:mm a')} - {moment(selectedEvent.end).format('MMMM Do YYYY, h:mm a')}</p>
+            <p><strong>Location:</strong> {selectedEvent.location}</p>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleCloseModal}>
+              Close
             </Button>
-          </Form>
-        </Col>
-      </Row>
+          </Modal.Footer>
+        </Modal>
+      )}
     </Container>
   );
 }

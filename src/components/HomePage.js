@@ -1,82 +1,75 @@
-import React from 'react';
-import { Container, Button, Row, Col, Card } from 'react-bootstrap';
-import Image from 'react-bootstrap/Image';
+import { useEffect, useRef, useState } from 'react';
+import { Card, Button, Carousel } from 'react-bootstrap';
+import { Link } from 'react-router-dom'; 
+import EventCarousel from './EventCarousel';
 
 function HomePage() {
   return (
-    <div>
-      {/* Hero Section Replacement */}
-      <div className="bg-primary text-white text-center py-5">
-        <Container>
-          <h1>Devs on Wallstreet</h1>
-          <p>
-            Some kind of phrase phrase goes here.
-          </p>
-          <Button variant="light" size="lg" href="/about">Learn More</Button>
-        </Container>
+    <div
+      style={{
+        backgroundImage: `url(${"/img/Finance_Buildings_Background.jpg"})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: '100vh',
+        width: '100vw',
+        overflowY: 'scroll',
+        display: 'flex',
+        flexDirection: 'column',
+        backgroundAttachment: 'fixed', // Parallax effect
+      }}
+    >
+      {/* Full-screen intro section */}
+      <div
+        style={{
+          height: '100vh',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'flex-start',
+          textAlign: 'center',
+          marginTop: '60vh',
+        }}
+      >
+        <h1 style={{ color: 'grey', fontSize: '4rem', fontWeight: 'bold' }}>
+          Devs on Wall Street
+        </h1>
+
+        <Button
+          variant="outline-dark"
+          style={{ marginTop: '1rem', fontSize: '1.5rem' }}
+          href="https://linktr.ee/devsonwallstreet"
+          target="_blank"
+        >
+          Join Club
+        </Button>
       </div>
 
-      {/* Cards Section */}
-      <Container className="my-5">
-        <Row>
-          <Col md={4}>
-            <Card className="text-center">
-              <Card.Body>
-                <Card.Title>Card One</Card.Title>
-                  <Card.Img 
-                    variant="top" 
-                    src="https://via.placeholder.com/150" 
-                    alt="Feature One Image" 
-                    style={{ width: '300px', height: '300px', margin: '0 auto' }}
-                  />          
-                  <hr></hr>   
-                <Card.Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card className="text-center">
-              <Card.Body>
-                <Card.Title>Card Two</Card.Title>
-                <Card.Img 
-                  variant="top" 
-                  src="https://via.placeholder.com/150" 
-                  alt="Feature One Image" 
-                  style={{ width: '300px', height: '300px', margin: '0 auto' }}
-                />          
-                <hr></hr>      
-                <Card.Text>
-                  ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={4}>
-            <Card className="text-center">
-              <Card.Body>
-                <Card.Title>Card Three</Card.Title>
-                  <Card.Img 
-                    variant="top" 
-                    src="https://via.placeholder.com/150" 
-                    alt="Feature One Image" 
-                    style={{ width: '300px', height: '300px', margin: '0 auto' }}
-                  />          
-                  <hr></hr>
-                <Card.Text>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
+  <br></br>
+  <br></br>
+      {/* About Us Section */}
+      <div
+        style={{
+          backgroundColor: '#F2EEE8',  // Updated background color
+          padding: '5rem 2rem',
+          textAlign: 'center',
+        }}
+      >
+        <h2>About Us</h2>
+        <p style={{ maxWidth: '800px', margin: '0 auto' }}>
+          Devs on Wall Street is a club dedicated to helping students prepare for technical positions in the finance industry. We host events, workshops, and networking opportunities to connect aspiring developers with professionals in the field.
+        </p>
+      </div>
 
-      <Container fluid className="bg-secondary text-white text-center p-5">
-        <h2>Join our group me</h2>
-        <Button variant="light" size="lg">Join Here</Button>
-      </Container>
+      {/* Image Carousel Section */}
+      <div
+        style={{
+          backgroundColor: '#FEFEF6',  // Updated background color
+          padding: '5rem 2rem',
+        }}
+      >
+        <EventCarousel></EventCarousel>
+      </div>
     </div>
   );
 }
