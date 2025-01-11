@@ -89,7 +89,7 @@ function AboutPage() {
       <Container fluid className="bg-secondary text-white text-center p-5">
         <h2>Interested in Joining Us?</h2>
         <p>We are always looking for passionate individuals to join our team and help us make a difference.</p>
-        <Button variant="light" size="lg">Get in Touch</Button>
+        <Button variant="light" size="lg" href='https://linktr.ee/DevsOnWallStreet'>Link Tree</Button>
       </Container>
     </div>
   );

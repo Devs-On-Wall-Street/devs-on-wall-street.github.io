@@ -24,9 +24,10 @@ const Layout = ({ children }) => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="calendar">Calendar</Nav.Link>
-              <Nav.Link href="resources">Resources</Nav.Link>
-              <Nav.Link href="events">Events</Nav.Link>
+              <Nav.Link href="/calendar">Calendar</Nav.Link>
+              <Nav.Link href="/resources">Resources</Nav.Link>
+              <Nav.Link href="/news">News</Nav.Link>
+              <Nav.Link href="/about">About</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

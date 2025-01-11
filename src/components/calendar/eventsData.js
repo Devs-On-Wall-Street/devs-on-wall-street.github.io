@@ -1,18 +1,29 @@
 // eventsData.js
 const eventsData = [
   {
-    title: 'React Workshop',
-    start: new Date(2024, 9, 11, 10, 0), // Year, Month (0-indexed), Day, Hour, Minute
-    end: new Date(2024, 9, 11, 12, 0),
-    location: 'Room 101, Main Building',
-  },
-  {
     title: 'Hackathon',
     start: new Date(2024, 8, 20, 9, 0),
     end: new Date(2024, 8, 20, 18, 0),
     location: 'Conference Hall, Building A',
   },
-  // Add more events as needed
+  {
+    title: 'SWE @ Morgan Stanley',
+    start: new Date(2024, 8, 16, 0, 0), // Sept 16th
+    end: new Date(2024, 8, 16, 23, 59),
+    location: 'Morgan Stanley Office',
+  },
+  {
+    title: 'SWE @ Google',
+    start: new Date(2024, 8, 30, 0, 0), // Sept 30th
+    end: new Date(2024, 8, 30, 23, 59),
+    location: 'Google Campus',
+  },
+  {
+    title: 'Quant Intern @ Citadel',
+    start: new Date(2024, 9, 14, 0, 0), // Oct 14th
+    end: new Date(2024, 9, 14, 23, 59),
+    location: 'Citadel Office',
+  },
 ];
 
 export default eventsData;
