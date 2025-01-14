@@ -24,6 +24,12 @@ const eventsData = [
     end: new Date(2024, 9, 14, 23, 59),
     location: 'Citadel Office',
   },
+  {
+    title: 'GBM #1', 
+    start: new Date(2025, 0, 16, 0, 0), // Jan 14th
+    end: new Date(2025, 0, 16, 23, 59),
+    location: 'MLC 268',
+  },
 ];
 
 export default eventsData;
