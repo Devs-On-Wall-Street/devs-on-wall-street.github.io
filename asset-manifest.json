@@ -1,18 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.11ef9ab4.css",
-    "main.js": "/static/js/main.f29afb22.js",
+    "main.css": "/static/css/main.313bd3cc.css",
+    "main.js": "/static/js/main.78abc4f3.js",
     "static/js/453.e0c074c4.chunk.js": "/static/js/453.e0c074c4.chunk.js",
+    "static/media/image1.png": "/static/media/image1.a636031fd481daf2a1da.png",
     "static/media/Neal Patel.jpg": "/static/media/Neal Patel.1c3d8cf7ebc4bc89e137.jpg",
     "static/media/Emilio Rivas Avalos.jpg": "/static/media/Emilio Rivas Avalos.17793876f15005eccbf9.jpg",
+    "static/media/image4.jpg": "/static/media/image4.96b814e8caf6edf637e6.jpg",
+    "static/media/image2.png": "/static/media/image2.92c9f4b4d99f88a06cfc.png",
+    "static/media/image5.jpg": "/static/media/image5.4ce7f7e579b6fa2374c9.jpg",
     "static/media/Johnny Diep.jpg": "/static/media/Johnny Diep.3d06f23c3ba40b5e917c.jpg",
+    "static/media/image3.jpg": "/static/media/image3.c536ade279cb065a021d.jpg",
     "index.html": "/index.html",
-    "main.11ef9ab4.css.map": "/static/css/main.11ef9ab4.css.map",
-    "main.f29afb22.js.map": "/static/js/main.f29afb22.js.map",
+    "main.313bd3cc.css.map": "/static/css/main.313bd3cc.css.map",
+    "main.78abc4f3.js.map": "/static/js/main.78abc4f3.js.map",
     "453.e0c074c4.chunk.js.map": "/static/js/453.e0c074c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11ef9ab4.css",
-    "static/js/main.f29afb22.js"
+    "static/css/main.313bd3cc.css",
+    "static/js/main.78abc4f3.js"
   ]
 }
