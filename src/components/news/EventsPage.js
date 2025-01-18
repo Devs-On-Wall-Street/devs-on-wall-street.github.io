@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Form, Collapse, Button  } from 'react-bootstrap';
+import { Container, Row, Col, Form} from 'react-bootstrap';
 import EventPreview from './EventPreview';
 
 function NewsPage() {
