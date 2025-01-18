@@ -2,6 +2,7 @@ import { Carousel } from "react-bootstrap";
 import JohnnyDiep from './Johnny Diep.jpg';
 import EmilioRivas from './Emilio Rivas Avalos.jpg'
 import NealPatel from './Neal Patel.jpg'
+import infoMeeting from './spring2025InfoMeeting.jpg'
 
 export default function EventCarousel() {
     return (
@@ -40,6 +41,18 @@ export default function EventCarousel() {
             <Carousel.Caption>
               <h3>Resume & LinkedIn Workshop</h3>
               <p>Guest speaker Neal Patel discusses professional profiles and getting career-ready.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{ height: '300px', objectFit: 'cover' }}  
+              className="d-block w-100"
+              src={infoMeeting}
+              alt="Fourth event"
+            />
+            <Carousel.Caption>
+              <h3>First Meeting of 2025</h3>
+              <p>Overview of DOW and its mission.</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
