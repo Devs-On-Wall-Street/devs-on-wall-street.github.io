@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Form } from 'react-bootstrap';
+import { Container, Row, Col, Form, Collapse, Button  } from 'react-bootstrap';
 import EventPreview from './EventPreview';
 
 function NewsPage() {
   const articles = [
     {
-      title: 'Introduction to AI in Finance',
-      description: 'An overview of how artificial intelligence is being applied in the financial sector.',
-      category: 'AI',
-      date: 'September 1, 2024',
-      link: '/articles/ai-in-finance'
+      title: 'Informational Meeting for Spring 2025',
+      description: 'An overview of DOW and its mission for the Spring 2025 semester.',
+      category: 'General',
+      date: 'January 16, 2025',
+      content: 'We discussed previous DOW meetings, plans for the semester, and introdiced ourselves to one another. We announced that we will be taking attendance at the meetings this semester.'
+      //link: '/articles/ai-in-finance'
     },
     {
       title: 'Understanding Blockchain Technology',
@@ -32,6 +33,11 @@ function NewsPage() {
   const filteredArticles = selectedCategory === 'All'
     ? articles
     : articles.filter(article => article.category === selectedCategory);
+  const [isGeneralArticleOpen, setIsGeneralArticleOpen] = useState(false);
+
+  const toggleGeneralArticle = () => {
+    setIsGeneralArticleOpen((prev) => !prev);
+  };
 
   return (
     <Container className="my-5">
@@ -45,6 +51,7 @@ function NewsPage() {
               onChange={(e) => setSelectedCategory(e.target.value)}
             >
               <option>All</option>
+              <option>General</option>
               <option>AI</option>
               <option>Blockchain</option>
               <option>Quantum Computing</option>
@@ -53,18 +60,23 @@ function NewsPage() {
           </Form.Group>
         </Col>
         <Col md={9}>
-          <h1 className="mb-4">Latest Articles</h1>
-          {filteredArticles.map((article, index) => (
-            <EventPreview 
-              key={index}
-              title={article.title}
-              description={article.description}
-              category={article.category}
-              date={article.date}
-              link={article.link}
-            />
-          ))}
-        </Col>
+  <h1 className="mb-4">Latest Articles</h1>
+
+  {filteredArticles.map((article, index) => (
+    <EventPreview
+      key={index}
+      title={article.title}
+      description={article.description}
+      category={article.category}
+      date={article.date}
+      link={article.link}
+      isExpandable={article.title === 'Informational Meeting for Spring 2025'} // Enable expanding for the specific article
+      isOpen={article.title === 'Informational Meeting for Spring 2025' && isGeneralArticleOpen}
+      onToggle={article.title === 'Informational Meeting for Spring 2025' ? toggleGeneralArticle : undefined}
+      content={article.content} // Pass the full content for expandable articles
+    />
+  ))}
+</Col>
       </Row>
     </Container>
   );
