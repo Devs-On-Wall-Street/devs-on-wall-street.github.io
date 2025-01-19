@@ -109,7 +109,7 @@ function AboutPage() {
                 style={{ width: '300px', height: '300px', margin: '15px auto' }}
               />
               <Card.Body>
-                <Card.Title>Apruva - VP of Technology</Card.Title>
+                <Card.Title>Apurva - VP of Technology</Card.Title>
                 <Card.Text>
                 I am a fourth year computer science major with an area of emphasis in applied data science and a minor in statistics. I am interested in the applications of data science within finance.
                 </Card.Text>
