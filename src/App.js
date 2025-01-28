@@ -34,7 +34,7 @@ function App() {
             <Nav className="ms-auto">
               <Nav.Link onClick={() => setPage("calendar")}>Calendar</Nav.Link>
               <Nav.Link onClick={() => setPage("resources")}>Resources</Nav.Link>
-              <Nav.Link onClick={() => setPage("news")}>News</Nav.Link>
+              <Nav.Link onClick={() => setPage("news")}>Events</Nav.Link>
               <Nav.Link onClick={() => setPage("about")}>About</Nav.Link>
             </Nav>
           </Navbar.Collapse>

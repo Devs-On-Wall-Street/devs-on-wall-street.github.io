@@ -9,22 +9,9 @@ function NewsPage() {
       description: 'An overview of DOW and its mission for the Spring 2025 semester.',
       category: 'General',
       date: 'January 16, 2025',
-      content: 'We discussed previous DOW meetings, plans for the semester, and introdiced ourselves to one another. We announced that we will be taking attendance at the meetings this semester.'
+      content: 'In this meeting new and returning members were able to get to know each other with fun questions. We discussed what type of events were lined up for the semester along with announcing new policies about attendance and an opportunity for some to potentially tour a company.',
+      image: "../eventCarousel/spring2025InfoMeeting.jpg"
       //link: '/articles/ai-in-finance'
-    },
-    {
-      title: 'Understanding Blockchain Technology',
-      description: 'A deep dive into blockchain and its potential to transform industries.',
-      category: 'Blockchain',
-      date: 'August 25, 2024',
-      link: '/articles/blockchain-technology'
-    },
-    {
-      title: 'The Rise of Quantum Computing',
-      description: 'Exploring the potential and challenges of quantum computing.',
-      category: 'Quantum Computing',
-      date: 'August 20, 2024',
-      link: '/articles/quantum-computing'
     },
   ];
 

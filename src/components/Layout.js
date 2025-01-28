@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
             <Nav className="ms-auto">
               <Nav.Link href="/calendar">Calendar</Nav.Link>
               <Nav.Link href="/resources">Resources</Nav.Link>
-              <Nav.Link href="/news">News</Nav.Link>
+              <Nav.Link href="/news">Events</Nav.Link>
               <Nav.Link href="/about">About</Nav.Link>
             </Nav>
           </Navbar.Collapse>

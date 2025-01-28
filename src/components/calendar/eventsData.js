@@ -30,6 +30,24 @@ const eventsData = [
     end: new Date(2025, 0, 16, 23, 59),
     location: 'MLC 268',
   },
+  {
+    title: 'Engagement Fair', 
+    start: new Date(2025, 0, 29, 18, 30), // Jan 29th
+    end: new Date(2025, 0, 29, 22, 0), 
+    location: 'Tate Student Center'
+  },
+  {
+    title: 'ACM Collaboration',
+    start: new Date(2025, 0, 30, 18, 30), // Jan 30th
+    end: new Date(2025, 0, 30, 19, 30), 
+    location: 'Boyd 322'
+  }, 
+  {
+    title: 'GBM #2',
+    start: new Date(2025, 1, 4, 0, 0), // Feb 4th
+    end: new Date(2025, 1, 4, 23, 59),
+    location: 'Boyd 208'
+  },
 ];
 
 export default eventsData;
