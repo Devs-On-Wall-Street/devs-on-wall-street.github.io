@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form} from 'react-bootstrap';
 import EventPreview from './EventPreview';
+import infoMeetingImg from '../../components/eventCarousel/spring2025InfoMeeting.jpg';;
 
 function NewsPage() {
   const articles = [
@@ -10,7 +11,7 @@ function NewsPage() {
       category: 'General',
       date: 'January 16, 2025',
       content: 'In this meeting new and returning members were able to get to know each other with fun questions. We discussed what type of events were lined up for the semester along with announcing new policies about attendance and an opportunity for some to potentially tour a company.',
-      image: "../eventCarousel/spring2025InfoMeeting.jpg"
+      image: infoMeetingImg
       //link: '/articles/ai-in-finance'
     },
   ];
@@ -61,6 +62,7 @@ function NewsPage() {
       isOpen={article.title === 'Informational Meeting for Spring 2025' && isGeneralArticleOpen}
       onToggle={article.title === 'Informational Meeting for Spring 2025' ? toggleGeneralArticle : undefined}
       content={article.content} // Pass the full content for expandable articles
+      image={article.image}
     />
   ))}
 </Col>
