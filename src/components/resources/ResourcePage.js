@@ -5,29 +5,34 @@ import ResourceItem from './ResourceItem';
 function ResourcesPage() {
   const resources = [
     {
-      title: 'MDN Web Docs',
-      description: 'Comprehensive documentation for HTML, CSS, and JavaScript, as well as many other web technologies.',
-      link: 'https://developer.mozilla.org/'
+      title: 'UGA Career Center',
+      description: 'Official UGA Website for career guidance, interview help, resume reviews, and more.',
+      link: 'https://career.uga.edu/'
     },
     {
-      title: 'freeCodeCamp',
-      description: 'Learn to code for free with interactive tutorials and projects in web development, data science, and more.',
-      link: 'https://www.freecodecamp.org/'
+      title: 'UGA Mentor Program',
+      description: 'Connect with UGA Alumni in relevant fields in Finance and Computer Science',
+      link: 'https://mentor.uga.edu/'
     },
     {
-      title: 'Stack Overflow',
-      description: 'A community-driven Q&A site for programmers to find solutions to coding problems.',
-      link: 'https://stackoverflow.com/'
+      title: 'Biginterview', 
+      description: 'UGA Students can use this resource to practice common interview questions with AI feedback',
+      link: 'https://uga.biginterview.com/'
     },
     {
-      title: 'GitHub',
-      description: 'A platform for hosting and collaborating on code, offering version control and repository management.',
-      link: 'https://github.com/'
-    },
+      title: 'Investopedia',
+      description: 'A resource to learn more about financial terms, definitions, equations, and more',
+      link: 'https://www.investopedia.com/'
+    }, 
     {
-      title: 'React Official Documentation',
-      description: 'The official guide and documentation for building user interfaces with React.',
-      link: 'https://reactjs.org/docs/getting-started.html'
+      title: 'LeetCode',
+      description: 'Practice common technical interview questions with various coding challenges',
+      link: 'https://leetcode.com/'
+    }, 
+    {
+      title: 'Handshake',
+      description: 'All UGA students have aceess to browse for internships and jobs, as well as upcoming events',
+      link: 'https://app.joinhandshake.com/'
     }
   ];
 

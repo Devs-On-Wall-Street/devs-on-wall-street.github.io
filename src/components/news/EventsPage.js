@@ -10,7 +10,7 @@ function NewsPage() {
       category: 'General',
       date: 'January 16, 2025',
       content: 'In this meeting new and returning members were able to get to know each other with fun questions. We discussed what type of events were lined up for the semester along with announcing new policies about attendance and an opportunity for some to potentially tour a company.',
-      image: "../eventCarousel/spring2025InfoMeeting.jpg"
+      image: '../eventCarousel/spring2025InfoMeeting.jpg'
       //link: '/articles/ai-in-finance'
     },
   ];
