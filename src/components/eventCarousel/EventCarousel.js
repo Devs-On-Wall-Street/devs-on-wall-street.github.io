@@ -3,6 +3,7 @@ import JohnnyDiep from './Johnny Diep.jpg';
 import EmilioRivas from './Emilio Rivas Avalos.jpg'
 import NealPatel from './Neal Patel.jpg'
 import infoMeeting from './spring2025InfoMeeting.jpg'
+import meeting0204 from './DOW_02_04.jpg'
 
 export default function EventCarousel() {
     return (
@@ -53,6 +54,18 @@ export default function EventCarousel() {
             <Carousel.Caption>
               <h3>First Meeting of 2025</h3>
               <p>Overview of DOW and its mission.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{ height: '300px', objectFit: 'cover' }}  
+              className="d-block w-100"
+              src={meeting0204}
+              alt="Fifth event"
+            />
+            <Carousel.Caption>
+              <h3>Second Meeting of 2025</h3>
+              <p>Exploring R, Python, and Cloud in Quant + Recruitment Insights.</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
