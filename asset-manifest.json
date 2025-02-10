@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.11ef9ab4.css",
-    "main.js": "/static/js/main.28179ee5.js",
+    "main.js": "/static/js/main.4079b14a.js",
     "static/js/453.e0c074c4.chunk.js": "/static/js/453.e0c074c4.chunk.js",
     "static/media/image9.png": "/static/media/image9.c67a6700dbe30822f66f.png",
     "static/media/image8.png": "/static/media/image8.c18813095d77ea01ee58.png",
@@ -14,16 +14,17 @@
     "static/media/image4.jpg": "/static/media/image4.7c87248a58f5b75c2f30.jpg",
     "static/media/image2.png": "/static/media/image2.92c9f4b4d99f88a06cfc.png",
     "static/media/image10.jpg": "/static/media/image10.4ce7f7e579b6fa2374c9.jpg",
+    "static/media/DOW_02_04.jpg": "/static/media/DOW_02_04.5ea3ae7f55cf2410ba48.jpg",
     "static/media/image3.jpg": "/static/media/image3.4a4f57308bb765c264c6.jpg",
     "static/media/Johnny Diep.jpg": "/static/media/Johnny Diep.3d06f23c3ba40b5e917c.jpg",
     "static/media/image5.jpg": "/static/media/image5.c536ade279cb065a021d.jpg",
     "index.html": "/index.html",
     "main.11ef9ab4.css.map": "/static/css/main.11ef9ab4.css.map",
-    "main.28179ee5.js.map": "/static/js/main.28179ee5.js.map",
+    "main.4079b14a.js.map": "/static/js/main.4079b14a.js.map",
     "453.e0c074c4.chunk.js.map": "/static/js/453.e0c074c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.11ef9ab4.css",
-    "static/js/main.28179ee5.js"
+    "static/js/main.4079b14a.js"
   ]
 }
