@@ -31,8 +31,38 @@ function ResourcesPage() {
     }, 
     {
       title: 'Handshake',
-      description: 'All UGA students have aceess to browse for internships and jobs, as well as upcoming events',
+      description: 'All UGA students have access to browse for internships and jobs, as well as upcoming events',
       link: 'https://app.joinhandshake.com/'
+    },
+    {
+      title: 'Wall Street Oasis',
+      description: 'A community-driven resource for finance professionals, offering career advice, resume tips, and job postings.',
+      link: 'https://www.wallstreetoasis.com/'
+    },
+    {
+      title: 'UGA Finance Society',
+      description: 'A student-run organization that connects students with finance professionals and hosts networking events.',
+      link: 'https://www.ugafinancesociety.com/'
+    },
+    {
+      title: 'Financial Modeling Prep',
+      description: 'Learn financial modeling and valuation techniques used in investment banking and private equity.',
+      link: 'https://financialmodelingprep.com/'
+    },
+    {
+      title: 'UGA Research Opportunities',
+      description: 'Find undergraduate and graduate research opportunities in finance, AI, and other fields.',
+      link: 'https://research.uga.edu/undergraduate/'
+    },
+    {
+      title: 'JP Morgan Winning Women',
+      description: 'A selective program aimed at connecting women with opportunities in finance and investment banking.',
+      link: 'https://careers.jpmorgan.com/us/en/students/programs/winning-women'
+    },
+    {
+      title: 'Goldman Sachs Insight Series',
+      description: 'Virtual and in-person events designed to introduce students to careers in investment banking and finance.',
+      link: 'https://www.goldmansachs.com/careers/students/programs/'
     }
   ];
 

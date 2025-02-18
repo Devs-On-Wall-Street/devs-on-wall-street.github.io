@@ -48,6 +48,30 @@ const eventsData = [
     end: new Date(2025, 1, 4, 23, 59),
     location: 'Boyd 208'
   },
+  {
+    title: 'GBM #3',
+    start: new Date(2025, 1, 18, 18, 0), // Feb 18th
+    end: new Date(2025, 1, 18, 19, 0),
+    location: 'Boyd 208 from 6-7'
+  },
+  {
+    title: 'Economics Society: AI Panel',
+    start: new Date(2025, 1, 17, 17, 30), 
+    end: new Date(2025, 1, 17, 19, 0),
+    location: ''
+  },
+  {
+    title: 'Frazier & Deeter',
+    start: new Date(2025, 1, 18, 9, 0), 
+    end: new Date(2025, 1, 18, 23, 0),
+    location: ''
+  },
+  {
+    title: 'Bank of America',
+    start: new Date(2025, 1, 18, 9, 0), 
+    end: new Date(2025, 1, 18, 23, 0),
+    location: ''
+  },
 ];
 
 export default eventsData;
