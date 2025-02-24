@@ -3,6 +3,7 @@ import { Container, Row, Col, Form} from 'react-bootstrap';
 import EventPreview from './EventPreview';
 import infoMeetingImg from '../../components/eventCarousel/spring2025InfoMeeting.jpg';
 import GBM1 from '../../components/eventCarousel/DOW_02_04.jpg';
+import Karthik from '../../components/eventCarousel/Karthik.jpg';
 
 function NewsPage() {
   const articles = [
@@ -56,6 +57,15 @@ function NewsPage() {
 Connect with <a href="https://www.linkedin.com/in/daryanr/">Daryan R. on LinkedIn</a>.
 `,
       image: GBM1,
+      //link: '/articles/ai-in-finance'
+    },
+    {
+      title: 'Spring 2025 GBM #2',
+      description: 'An overview of GT ISyE Overview and a Q&A with guest speaker Karthik Senthil.',
+      category: 'General',
+      date: 'February 18, 2025',
+      content: 'We covered key details about the ISyE Undergraduate Research Program, insights on research methodologies, AI applications, career development, and emerging trends in crypto and venture capital. For those who filled out the attendance form, all relevant information has been emailed to you.',
+      image: Karthik,
       //link: '/articles/ai-in-finance'
     },
   ];
@@ -112,7 +122,7 @@ Connect with <a href="https://www.linkedin.com/in/daryanr/">Daryan R. on LinkedI
       category={article.category}
       date={article.date}
       link={article.link}
-      isExpandable={article.title === 'Informational Meeting for Spring 2025' || article.title === 'Spring 2025 GBM #1'} // Enable expanding for the specific article
+      isExpandable={article.title === 'Informational Meeting for Spring 2025' || article.title === 'Spring 2025 GBM #1'|| article.title === 'Spring 2025 GBM #2'} // Enable expanding for the specific article
       isOpen={!!expandedArticles[article.title]}
       onToggle={() => toggleArticle(article.title)}
       content= {<div dangerouslySetInnerHTML={{ __html: article.content }} />} // Pass the full content for expandable articles
