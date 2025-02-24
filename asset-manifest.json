@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.313bd3cc.css",
-    "main.js": "/static/js/main.efb833d3.js",
+    "main.css": "/static/css/main.11ef9ab4.css",
+    "main.js": "/static/js/main.891c77c3.js",
     "static/js/453.e0c074c4.chunk.js": "/static/js/453.e0c074c4.chunk.js",
     "static/media/image9.png": "/static/media/image9.c67a6700dbe30822f66f.png",
+    "static/media/Karthik.jpg": "/static/media/Karthik.df71f3834985c1c5079e.jpg",
     "static/media/image8.png": "/static/media/image8.c18813095d77ea01ee58.png",
     "static/media/image6.png": "/static/media/image6.e508aba2235c2a7a8285.png",
     "static/media/image1.png": "/static/media/image1.a636031fd481daf2a1da.png",
@@ -19,12 +20,12 @@
     "static/media/Johnny Diep.jpg": "/static/media/Johnny Diep.3d06f23c3ba40b5e917c.jpg",
     "static/media/image5.jpg": "/static/media/image5.c536ade279cb065a021d.jpg",
     "index.html": "/index.html",
-    "main.313bd3cc.css.map": "/static/css/main.313bd3cc.css.map",
-    "main.efb833d3.js.map": "/static/js/main.efb833d3.js.map",
+    "main.11ef9ab4.css.map": "/static/css/main.11ef9ab4.css.map",
+    "main.891c77c3.js.map": "/static/js/main.891c77c3.js.map",
     "453.e0c074c4.chunk.js.map": "/static/js/453.e0c074c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.313bd3cc.css",
-    "static/js/main.efb833d3.js"
+    "static/css/main.11ef9ab4.css",
+    "static/js/main.891c77c3.js"
   ]
 }
