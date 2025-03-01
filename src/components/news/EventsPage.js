@@ -4,6 +4,7 @@ import EventPreview from './EventPreview';
 import infoMeetingImg from '../../components/eventCarousel/spring2025InfoMeeting.jpg';
 import GBM1 from '../../components/eventCarousel/DOW_02_04.jpg';
 import Karthik from '../../components/eventCarousel/Karthik.jpg';
+import AC from '../../components/eventCarousel/AC.jpg';
 
 function NewsPage() {
   const articles = [
@@ -68,6 +69,57 @@ Connect with <a href="https://www.linkedin.com/in/daryanr/">Daryan R. on LinkedI
       image: Karthik,
       //link: '/articles/ai-in-finance'
     },
+    {
+      title: 'Spring 2025 GBM #3',
+      description: 'AI/Finance speed pitch activity and a Q&A with guest speaker Andrew Chen.',
+      category: 'General',
+      date: 'February 25, 2025',
+      content: `<strong>Key Takeaways from Spring 2025 GBM #3</strong><br /><br />
+
+<strong>Relevant Academic Background</strong><br />
+- Pure mathematics has limited direct application<br />
+- Applied mathematics, real-world problem-solving, and stochastic processes are highly relevant<br />
+- Machine learning, computer science, statistics, data science, and financial modeling are essential for success<br /><br />
+
+<strong>Challenges in Academia & Career Development</strong><br />
+- Imposter syndrome is common as some peers may have a head start or more time for preparation<br />
+- Quantitative recruiting is highly competitive and requires months of rigorous study<br />
+- The industry is exclusive, with fewer opportunities and limited accessibility compared to other fields<br />
+- Experts are often too busy to mentor newcomers, making it difficult to gain insider knowledge<br />
+- A broad academic background, while valuable, may hinder specialization needed for quant finance<br /><br />
+
+<strong>Quantitative Finance Interview Process</strong><br />
+- Emphasizes problem-solving in quantitative trading, probability, statistics, and algorithmic challenges<br />
+- Assessments include coding tests, market-making simulations, and strategy games related to trading, betting, and gambling<br />
+- Initial screening tests are available on platforms like <a href="http://quantguide.io">quantguide.io</a><br />
+- Later rounds focus on networking and deeper industry knowledge<br />
+- Mental math skills are assessed, with firms like Acuna and Optiver emphasizing rapid calculations<br />
+- Offers depend on technical proficiency, work ethic, and adaptability<br /><br />
+
+<strong>Work Environment & Industry Realities</strong><br />
+- Typical workload ranges from 50 to 60 hours per week, with a strong focus on results<br />
+- Productivity and impact are valued more than time spent in the office<br />
+- The role can be mentally and physically demanding<br />
+- Some debate exists on whether capital allocation in quantitative finance benefits the broader economy<br />
+- Non-quantitative roles tend to have lower compensation<br />
+- Salary negotiation is essential to ensure fair pay<br /><br />
+
+<strong>College & Career Advice</strong><br />
+- Balancing personal interests with professional strengths is key<br />
+- Passion alone may not sustain long-term motivation, as challenges are inevitable<br />
+- Developing expertise in niche areas provides a competitive advantage<br /><br />
+
+<strong>Software Engineering Interview Process</strong><br />
+- Behavioral assessments evaluate cultural fit, communication, and teamwork<br />
+- Technical case studies focus on problem-solving scenarios relevant to financial technology<br />
+- Candidates must discuss past projects in depth, explaining challenges, solutions, and key lessons learned<br /><br />
+
+Follow <a href="https://www.instagram.com/ac.abgs/">AC on Instagram</a>.
+
+`,
+      image: AC,
+      //link: '/articles/ai-in-finance'
+    },
   ];
 
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -122,7 +174,7 @@ Connect with <a href="https://www.linkedin.com/in/daryanr/">Daryan R. on LinkedI
       category={article.category}
       date={article.date}
       link={article.link}
-      isExpandable={article.title === 'Informational Meeting for Spring 2025' || article.title === 'Spring 2025 GBM #1'|| article.title === 'Spring 2025 GBM #2'} // Enable expanding for the specific article
+      isExpandable={article.title === 'Informational Meeting for Spring 2025' || article.title === 'Spring 2025 GBM #1'|| article.title === 'Spring 2025 GBM #2'|| article.title === 'Spring 2025 GBM #3'} // Enable expanding for the specific article
       isOpen={!!expandedArticles[article.title]}
       onToggle={() => toggleArticle(article.title)}
       content= {<div dangerouslySetInnerHTML={{ __html: article.content }} />} // Pass the full content for expandable articles
