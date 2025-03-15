@@ -5,6 +5,7 @@ import infoMeetingImg from '../../components/eventCarousel/spring2025InfoMeeting
 import GBM1 from '../../components/eventCarousel/DOW_02_04.jpg';
 import Karthik from '../../components/eventCarousel/Karthik.jpg';
 import AC from '../../components/eventCarousel/AC.jpg';
+import Andrew from '../../components/eventCarousel/Andrew.jpg';
 
 function NewsPage() {
   const articles = [
@@ -120,6 +121,52 @@ Follow <a href="https://www.instagram.com/ac.abgs/">AC on Instagram</a>.
       image: AC,
       //link: '/articles/ai-in-finance'
     },
+    {
+      title: 'Spring 2025 GBM #4',
+      description: 'Probability Game & Guest Speaker Andrew Passero.',
+      category: 'General',
+      date: 'March 11, 2025',
+      content: `<strong>Key Takeaways from Spring 2025 GBM #4</strong><br /><br />
+
+<strong>Choosing Between Startups and Large Companies</strong><br />
+- Startups are fast-paced with steep learning curves<br />
+- Large companies offer structure, stability, and clear career paths<br />
+- Rotational programs provide exposure before specialization<br /><br />
+
+<strong>Preparing for a Career in Tech & Finance</strong><br />
+- Domain knowledge helps but isn’t always required<br />
+- Side projects matter more than industry experience<br />
+- Scalability is key—move beyond basic prototypes<br />
+- Transitioning to work requires efficiency and discipline<br /><br />
+
+<strong>Navigating the BlackRock Recruitment Process</strong><br />
+- A few LeetCode problems per week were enough<br />
+- The online assessment had simple and graph problems<br />
+- The interview took over a month to schedule<br />
+- Coding challenge: Implement Tic-Tac-Toe with design discussion<br />
+- Side projects played a major role in evaluation<br />
+- Networking wasn’t necessary to land the offer<br /><br />
+
+<strong>Succeeding as a New Grad Engineer</strong><br />
+- Understand the bigger system, not just your tickets<br />
+- Automate tasks to improve team productivity<br />
+- Office hours help in learning from senior engineers<br />
+- Promotions and bonuses depend on yearly goals<br />
+- Keep learning and working on personal projects<br /><br />
+
+<strong>Key Career Advice</strong><br />
+- Side projects showcase real-world problem-solving<br />
+- Networking helps but skills matter more<br />
+- Don’t take industry trends at face value<br />
+- Go beyond expectations and contribute ideas<br /><br />
+
+Connect with <a href="https://www.linkedin.com/in/andrew-passero-3541b41b6/">Andrew Passero on LinkedIn</a>.
+
+
+`,
+      image: Andrew,
+      //link: '/articles/ai-in-finance'
+    },
   ];
 
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -174,7 +221,7 @@ Follow <a href="https://www.instagram.com/ac.abgs/">AC on Instagram</a>.
       category={article.category}
       date={article.date}
       link={article.link}
-      isExpandable={article.title === 'Informational Meeting for Spring 2025' || article.title === 'Spring 2025 GBM #1'|| article.title === 'Spring 2025 GBM #2'|| article.title === 'Spring 2025 GBM #3'} // Enable expanding for the specific article
+      isExpandable={article.title === 'Informational Meeting for Spring 2025' || article.title === 'Spring 2025 GBM #1'|| article.title === 'Spring 2025 GBM #2'|| article.title === 'Spring 2025 GBM #3'|| article.title === 'Spring 2025 GBM #4'} // Enable expanding for the specific article
       isOpen={!!expandedArticles[article.title]}
       onToggle={() => toggleArticle(article.title)}
       content= {<div dangerouslySetInnerHTML={{ __html: article.content }} />} // Pass the full content for expandable articles

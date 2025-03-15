@@ -6,6 +6,7 @@ import infoMeeting from './spring2025InfoMeeting.jpg'
 import meeting0204 from './DOW_02_04.jpg'
 import Karthik from './Karthik.jpg'
 import AC from './AC.jpg'
+import Andrew from './Andrew.jpg'
 
 export default function EventCarousel() {
     return (
@@ -92,6 +93,18 @@ export default function EventCarousel() {
             <Carousel.Caption>
               <h3>Fourth Meeting of 2025</h3>
               <p>AI/Finance Speed Pitch & Guest Speaker Andrew Chen</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{ height: '300px', objectFit: 'cover' }}  
+              className="d-block w-100"
+              src={Andrew}
+              alt="Sixth event"
+            />
+            <Carousel.Caption>
+              <h3>Fifth Meeting of 2025</h3>
+              <p>Probability Game & Guest Speaker Andrew Passero</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
