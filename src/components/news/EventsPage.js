@@ -167,7 +167,7 @@ Connect with <a href="https://www.linkedin.com/in/andrew-passero-3541b41b6/">And
       image: Andrew,
       //link: '/articles/ai-in-finance'
     },
-  ];
+  ].reverse(); // just reversed the array so adding new items will appear at the top
 
   const [selectedCategory, setSelectedCategory] = useState('All');
 
