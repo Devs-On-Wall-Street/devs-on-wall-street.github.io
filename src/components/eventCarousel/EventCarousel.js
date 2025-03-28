@@ -7,6 +7,7 @@ import meeting0204 from './DOW_02_04.jpg'
 import Karthik from './Karthik.jpg'
 import AC from './AC.jpg'
 import Andrew from './Andrew.jpg'
+import DRW from './drw.png'
 
 export default function EventCarousel() {
     return (
@@ -105,6 +106,18 @@ export default function EventCarousel() {
             <Carousel.Caption>
               <h3>Fifth Meeting of 2025</h3>
               <p>Probability Game & Guest Speaker Andrew Passero</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{ height: '300px', objectFit: 'cover' }}  
+              className="d-block w-100"
+              src={DRW}
+              alt="Seventh event"
+            />
+            <Carousel.Caption>
+              <h3>Sixth Meeting of 2025</h3>
+              <p>Deal or No Deal Risk/Reward Game + Q&A with Vishnu Menon</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>

@@ -6,6 +6,7 @@ import GBM1 from '../../components/eventCarousel/DOW_02_04.jpg';
 import Karthik from '../../components/eventCarousel/Karthik.jpg';
 import AC from '../../components/eventCarousel/AC.jpg';
 import Andrew from '../../components/eventCarousel/Andrew.jpg';
+import DRW from '../../components/eventCarousel/drw.png';
 
 function NewsPage() {
   const articles = [
@@ -167,6 +168,45 @@ Connect with <a href="https://www.linkedin.com/in/andrew-passero-3541b41b6/">And
       image: Andrew,
       //link: '/articles/ai-in-finance'
     },
+    ,
+    {
+      title: 'Spring 2025 GBM #5',
+      description: 'Deal or No Deal Risk/Reward Game + Q&A with Vishnu Menon.',
+      category: 'General',
+      date: 'March 25, 2025',
+      content: `<strong>Key Takeaways from Spring 2025 GBM #5</strong><br /><br />
+
+<strong>Insights from a Full-Time Engineer at DRW</strong><br />
+- Works in DRW’s treasury team, handling financial resource allocation and crypto strategy<br />
+- DRW emphasizes a strong theoretical CS foundation and building systems from the ground up<br />
+- The environment is highly motivated and intellectually curious<br />
+- Compared to big tech, quant roles involve fewer users, different technical challenges, and more internal systems<br />
+- Examples like exchange ledger systems are more relevant in quant interviews than in big tech<br /><br />
+
+<strong>Interviews and Technical Preparation</strong><br />
+- Be confident and thorough in explaining your thought process<br />
+- Know your past projects well—how they work technically and why you built them that way<br />
+- Internship interviews focus mostly on LeetCode, not system design<br />
+- Consistent LeetCode practice is more important than intensity<br />
+- Quant interviews may include distributed systems and deeper problem breakdowns<br /><br />
+
+<strong>Career Growth, Motivation, and the Future</strong><br />
+- Big tech internships often lack real impact; quant roles can be more challenging<br />
+- If you're not mentally stimulated or feeling rewarded, it's time to pivot<br />
+- Try real-world projects and deploy them—go beyond isolated LeetCode problems<br />
+- Keep learning by pushing yourself out of your comfort zone<br />
+- Plans to stay at DRW short-term, then possibly return to big tech or explore startups<br />
+- Once you’ve built strong skills, moving between industries becomes easier<br />
+- AI will gradually impact how software is written, but short-term interview formats are unlikely to change significantly<br /><br />
+
+Connect with <a href="https://www.linkedin.com/in/vishnu-menon-75977b169/">Vishnu Menon on LinkedIn</a>.
+
+
+
+`,
+      image: DRW,
+      //link: '/articles/ai-in-finance'
+    },
   ].reverse(); // just reversed the array so adding new items will appear at the top
 
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -221,7 +261,7 @@ Connect with <a href="https://www.linkedin.com/in/andrew-passero-3541b41b6/">And
       category={article.category}
       date={article.date}
       link={article.link}
-      isExpandable={article.title === 'Informational Meeting for Spring 2025' || article.title === 'Spring 2025 GBM #1'|| article.title === 'Spring 2025 GBM #2'|| article.title === 'Spring 2025 GBM #3'|| article.title === 'Spring 2025 GBM #4'} // Enable expanding for the specific article
+      isExpandable={article.title === 'Informational Meeting for Spring 2025' || article.title === 'Spring 2025 GBM #1'|| article.title === 'Spring 2025 GBM #2'|| article.title === 'Spring 2025 GBM #3'|| article.title === 'Spring 2025 GBM #4'|| article.title === 'Spring 2025 GBM #5'} // Enable expanding for the specific article
       isOpen={!!expandedArticles[article.title]}
       onToggle={() => toggleArticle(article.title)}
       content= {<div dangerouslySetInnerHTML={{ __html: article.content }} />} // Pass the full content for expandable articles
