@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.11ef9ab4.css",
-    "main.js": "/static/js/main.a46f89b6.js",
+    "main.js": "/static/js/main.1beba270.js",
     "static/js/453.e0c074c4.chunk.js": "/static/js/453.e0c074c4.chunk.js",
     "static/media/image9.png": "/static/media/image9.c67a6700dbe30822f66f.png",
     "static/media/Andrew.jpg": "/static/media/Andrew.ce211ab1949e6612604d.jpg",
     "static/media/Karthik.jpg": "/static/media/Karthik.df71f3834985c1c5079e.jpg",
     "static/media/image8.png": "/static/media/image8.c18813095d77ea01ee58.png",
     "static/media/image6.png": "/static/media/image6.e508aba2235c2a7a8285.png",
+    "static/media/drw.png": "/static/media/drw.ef63a23bfbf842c03788.png",
     "static/media/image1.png": "/static/media/image1.a636031fd481daf2a1da.png",
     "static/media/Neal Patel.jpg": "/static/media/Neal Patel.1c3d8cf7ebc4bc89e137.jpg",
     "static/media/Emilio Rivas Avalos.jpg": "/static/media/Emilio Rivas Avalos.17793876f15005eccbf9.jpg",
@@ -23,11 +24,11 @@
     "static/media/image5.jpg": "/static/media/image5.c536ade279cb065a021d.jpg",
     "index.html": "/index.html",
     "main.11ef9ab4.css.map": "/static/css/main.11ef9ab4.css.map",
-    "main.a46f89b6.js.map": "/static/js/main.a46f89b6.js.map",
+    "main.1beba270.js.map": "/static/js/main.1beba270.js.map",
     "453.e0c074c4.chunk.js.map": "/static/js/453.e0c074c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.11ef9ab4.css",
-    "static/js/main.a46f89b6.js"
+    "static/js/main.1beba270.js"
   ]
 }
