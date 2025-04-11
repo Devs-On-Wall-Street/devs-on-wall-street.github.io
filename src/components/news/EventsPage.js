@@ -7,6 +7,7 @@ import Karthik from '../../components/eventCarousel/Karthik.jpg';
 import AC from '../../components/eventCarousel/AC.jpg';
 import Andrew from '../../components/eventCarousel/Andrew.jpg';
 import DRW from '../../components/eventCarousel/drw.png';
+import Rafay from '../../components/eventCarousel/Rafay.jpg';
 
 function NewsPage() {
   const articles = [
@@ -207,6 +208,43 @@ Connect with <a href="https://www.linkedin.com/in/vishnu-menon-75977b169/">Vishn
       image: DRW,
       //link: '/articles/ai-in-finance'
     },
+    {
+      title: 'Spring 2025 GBM #6',
+      description: 'Networking + Q&A with Rafay Syed.',
+      category: 'General',
+      date: 'April 8, 2025',
+      content: `<strong>Key Takeaways from Spring 2025 GBM #6</strong><br /><br />
+
+<strong>Insights from an Engineer at Salesforce</strong><br />
+- Backend role focused on Java and SQL, with a remote frontend team based in India.  <br />
+- Projects center on Salesforce integration and internal AI tools, offering deeper technical challenges than typical product-focused roles.  <br />
+- Remote collaboration introduced coordination challenges not seen in prior in-office environments like GM or Home Depot.  <br />
+
+<br />
+
+<strong>Growth, Education, and Strategy</strong><br />
+- Completed an online Master’s degree while working full-time, fully funded by GM, with a focus on real-world CS applications.  <br />
+- Chose the technical track over management to stay hands-on with engineering and avoid meeting-heavy work.  <br />
+- Transitioned to an AI-focused team by following up after a PM-led demo—initiative directly led to an internal move.  <br />
+- Technical growth defined by sharing work through tech talks, seeking feedback, and engaging with senior engineers.  <br />
+
+<br />
+
+<strong>Career Advice and Interview Process</strong><br />
+- Emphasize skill-building over job titles—career security comes from craft, not company name.  <br />
+- Use LinkedIn to set up casual coffee chats and lean on referrals when job searching while employed.  <br />
+- Interviews included HackerRank, system design, and whiteboard sessions, with a strong focus on explaining thought process clearly. <br /> 
+- Recommended tools include <a href="https://www.rounds.so/">Rounds.so</a> for transparent interview prep and <a href="https://www.levels.fyi/">Levels.fyi</a> for compensation research. <br /> 
+
+<br />
+
+Connect with <a href="https://www.linkedin.com/in/rafay-syed-22170440/">Rafay Syed on LinkedIn</a>.
+
+
+`,
+      image: Rafay,
+      //link: '/articles/ai-in-finance'
+    },
   ].reverse(); // just reversed the array so adding new items will appear at the top
 
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -261,7 +299,7 @@ Connect with <a href="https://www.linkedin.com/in/vishnu-menon-75977b169/">Vishn
       category={article.category}
       date={article.date}
       link={article.link}
-      isExpandable={article.title === 'Informational Meeting for Spring 2025' || article.title === 'Spring 2025 GBM #1'|| article.title === 'Spring 2025 GBM #2'|| article.title === 'Spring 2025 GBM #3'|| article.title === 'Spring 2025 GBM #4'|| article.title === 'Spring 2025 GBM #5'} // Enable expanding for the specific article
+      isExpandable={article.title === 'Informational Meeting for Spring 2025' || article.title === 'Spring 2025 GBM #1'|| article.title === 'Spring 2025 GBM #2'|| article.title === 'Spring 2025 GBM #3'|| article.title === 'Spring 2025 GBM #4'|| article.title === 'Spring 2025 GBM #5'|| article.title === 'Spring 2025 GBM #6'} // Enable expanding for the specific article
       isOpen={!!expandedArticles[article.title]}
       onToggle={() => toggleArticle(article.title)}
       content= {<div dangerouslySetInnerHTML={{ __html: article.content }} />} // Pass the full content for expandable articles

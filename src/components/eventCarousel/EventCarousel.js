@@ -8,6 +8,7 @@ import Karthik from './Karthik.jpg'
 import AC from './AC.jpg'
 import Andrew from './Andrew.jpg'
 import DRW from './drw.png'
+import Rafay from './Rafay.jpg'
 
 export default function EventCarousel() {
     return (
@@ -118,6 +119,18 @@ export default function EventCarousel() {
             <Carousel.Caption>
               <h3>Sixth Meeting of 2025</h3>
               <p>Deal or No Deal Risk/Reward Game + Q&A with Vishnu Menon</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              style={{ height: '300px', objectFit: 'cover' }}  
+              className="d-block w-100"
+              src={Rafay}
+              alt="Eigth event"
+            />
+            <Carousel.Caption>
+              <h3>Seventh Meeting of 2025</h3>
+              <p>Networking + Q&A with Rafay Syed</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
