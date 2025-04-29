@@ -245,6 +245,24 @@ Connect with <a href="https://www.linkedin.com/in/rafay-syed-22170440/">Rafay Sy
       image: Rafay,
       //link: '/articles/ai-in-finance'
     },
+    {
+      title: 'Spring 2025 GBM #7',
+      description: 'UGA Interns Q&A.',
+      category: 'General',
+      date: 'April 22, 2025',
+      content: `<strong>Key Takeaways from Spring 2025 GBM #7</strong><br /><br />
+
+<br />
+We spoke to UGA students who have previously interned or will be interning at large companies
+like Amazon and Two Sigma.  <br />
+
+<br />
+
+
+`,
+      
+      //link: '/articles/ai-in-finance'
+    },
   ].reverse(); // just reversed the array so adding new items will appear at the top
 
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -299,7 +317,7 @@ Connect with <a href="https://www.linkedin.com/in/rafay-syed-22170440/">Rafay Sy
       category={article.category}
       date={article.date}
       link={article.link}
-      isExpandable={article.title === 'Informational Meeting for Spring 2025' || article.title === 'Spring 2025 GBM #1'|| article.title === 'Spring 2025 GBM #2'|| article.title === 'Spring 2025 GBM #3'|| article.title === 'Spring 2025 GBM #4'|| article.title === 'Spring 2025 GBM #5'|| article.title === 'Spring 2025 GBM #6'} // Enable expanding for the specific article
+      isExpandable={article.title === 'Informational Meeting for Spring 2025' || article.title === 'Spring 2025 GBM #1'|| article.title === 'Spring 2025 GBM #2'|| article.title === 'Spring 2025 GBM #3'|| article.title === 'Spring 2025 GBM #4'|| article.title === 'Spring 2025 GBM #5'|| article.title === 'Spring 2025 GBM #6'|| article.title === 'Spring 2025 GBM #7'} // Enable expanding for the specific article
       isOpen={!!expandedArticles[article.title]}
       onToggle={() => toggleArticle(article.title)}
       content= {<div dangerouslySetInnerHTML={{ __html: article.content }} />} // Pass the full content for expandable articles
